@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo - Biblioteca Digital</title>
+    <link rel="stylesheet" href="/css/estilo_inicio.css"> </head>
+<body>
+    <header>
+        <h1>Catálogo de Libros</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="autor.html">Autores</a></li>
+            <li><a href="informacion.html">Nosotros</a></li>
+            <li><a href="login.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <input type="text" id="filtro" placeholder="Filtrar por título o autor...">
+        
+        <table id="tabla_libros" border="1" style="width:100%; margin-top: 20px;">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Categoría</th>
+                    <th>Año</th>
+                </tr>
+            </thead>
+            <tbody id="contenido_tabla">
+                </tbody>
+        </table>
+    </main>
+
+    <script src="/javascript/catalogo.js"></script>
+</body>
+</html>
