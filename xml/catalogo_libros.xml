@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca>
+  <libro id="1">
+    <titulo>Cien Años de Soledad</titulo>
+    <autor>Gabriel García Márquez</autor>
+    <categoria>Novela</categoria>
+    <anio>1967</anio>
+  </libro>
+  <libro id="2">
+    <titulo>Don Quijote de la Mancha</titulo>
+    <autor>Miguel de Cervantes</autor>
+    <categoria>Clásico</categoria>
+    <anio>1605</anio>
+  </libro>
+  <libro id="3">
+    <titulo>1984</titulo>
+    <autor>George Orwell</autor>
+    <categoria>Distopía</categoria>
+    <anio>1949</anio>
+  </libro>
+  <libro id="4">
+    <titulo>El Principito</titulo>
+    <autor>Antoine de Saint-Exupéry</autor>
+    <categoria>Fábula</categoria>
+    <anio>1943</anio>
+  </libro>
+  <libro id="5">
+    <titulo>La Metamorfosis</titulo>
+    <autor>Franz Kafka</autor>
+    <categoria>Novela</categoria>
+    <anio>1915</anio>
+  </libro>
+  <libro id="6">
+    <titulo>Crimen y Castigo</titulo>
+    <autor>Fiódor Dostoyevski</autor>
+    <categoria>Novela</categoria>
+    <anio>1866</anio>
+  </libro>
+  <libro id="7">
+    <titulo>Orgullo y Prejuicio</titulo>
+    <autor>Jane Austen</autor>
+    <categoria>Romance</categoria>
+    <anio>1813</anio>
+  </libro>
+  <libro id="8">
+    <titulo>El Hobbit</titulo>
+    <autor>J.R.R. Tolkien</autor>
+    <categoria>Fantasía</categoria>
+    <anio>1937</anio>
+  </libro>
+  <libro id="9">
+    <titulo>Fahrenheit 451</titulo>
+    <autor>Ray Bradbury</autor>
+    <categoria>Distopía</categoria>
+    <anio>1953</anio>
+  </libro>
+  <libro id="10">
+    <titulo>Ulises</titulo>
+    <autor>James Joyce</autor>
+    <categoria>Modernismo</categoria>
+    <anio>1922</anio>
+  </libro>
+  <libro id="11">
+    <titulo>Moby Dick</titulo>
+    <autor>Herman Melville</autor>
+    <categoria>Aventura</categoria>
+    <anio>1851</anio>
+  </libro>
+  <libro id="12">
+    <titulo>El Retrato de Dorian Gray</titulo>
+    <autor>Oscar Wilde</autor>
+    <categoria>Novela</categoria>
+    <anio>1890</anio>
+  </libro>
+  <libro id="13">
+    <titulo>Drácula</titulo>
+    <autor>Bram Stoker</autor>
+    <categoria>Terror</categoria>
+    <anio>1897</anio>
+  </libro>
+  <libro id="14">
+    <titulo>Rayuela</titulo>
+    <autor>Julio Cortázar</autor>
+    <categoria>Novela</categoria>
+    <anio>1963</anio>
+  </libro>
+  <libro id="15">
+    <titulo>Ensayo sobre la Ceguera</titulo>
+    <autor>José Saramago</autor>
+    <categoria>Ficción</categoria>
+    <anio>1995</anio>
+  </libro>
+  <libro id="16">
+    <titulo>La Odisea</titulo>
+    <autor>Homero</autor>
+    <categoria>Épico</categoria>
+    <anio>800 AC</anio>
+  </libro>
+  <libro id="17">
+    <titulo>Frankenstein</titulo>
+    <autor>Mary Shelley</autor>
+    <categoria>Ciencia Ficción</categoria>
+    <anio>1818</anio>
+  </libro>
+  <libro id="18">
+    <titulo>La Divina Comedia</titulo>
+    <autor>Dante Alighieri</autor>
+    <categoria>Clásico</categoria>
+    <anio>1320</anio>
+  </libro>
+  <libro id="19">
+    <titulo>El Nombre de la Rosa</titulo>
+    <autor>Umberto Eco</autor>
+    <categoria>Misterio</categoria>
+    <anio>1980</anio>
+  </libro>
+  <libro id="20">
+    <titulo>Pedro Páramo</titulo>
+    <autor>Juan Rulfo</autor>
+    <categoria>Novela</categoria>
+    <anio>1955</anio>
+  </libro>
+</biblioteca>
