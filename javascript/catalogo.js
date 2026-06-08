@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         fila.addEventListener("click", () => {
             localStorage.setItem("libroSeleccionado", l.titulo);
-            window.location.href = "/html/libro.html"; 
+            window.location.href = "../html/libro.html"; 
         });
         tabla.appendChild(fila);
     });
