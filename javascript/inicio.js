@@ -1,4 +1,4 @@
-fetch("/ordinario-ftw/xml/catalogo_libros.xml")
+fetch("../xml/catalogo_libros.xml")
     .then(response => response.text())
     .then(data => {
         const xmlDoc = new DOMParser().parseFromString(data, "text/xml");
@@ -26,5 +26,5 @@ function verDetalle(tituloLibro) {
     // Guardamos el título del libro seleccionado
     localStorage.setItem("libroSeleccionado", tituloLibro);
     // Redirigimos a la página de detalles
-    window.location.href = "/html/libro.html";
+    window.location.href = "../html/libro.html";
 }

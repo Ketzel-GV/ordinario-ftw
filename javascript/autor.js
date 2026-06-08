@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("/ordinario-ftw/xml/catalogo_libros.xml")
+    fetch("../xml/catalogo_libros.xml")
         .then(response => response.text())
         .then(data => {
             const xmlDoc = new DOMParser().parseFromString(data, "text/xml");
