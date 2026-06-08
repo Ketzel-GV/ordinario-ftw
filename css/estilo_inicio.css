@@ -271,3 +271,31 @@ header input {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+
+.registro_container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #E0D4C8;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.input_group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input_group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input_group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B08968;
+    border-radius: 5px;
+}
