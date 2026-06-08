@@ -1,14 +1,14 @@
-document.getElementById("formulario-registro").addEventListener("submit", function(e) {
-    e.preventDefault(); // Evita que la página se recargue
+document.getElementById("formulario_registro").addEventListener("submit", function(e) {
+    e.preventDefault(); 
 
     const nombre = document.getElementById("nombre").value;
     
-    // Guardamos un pequeño mensaje en el localStorage para confirmar
+    // Guardamos el usuario
     localStorage.setItem("usuarioRegistrado", nombre);
     
-    document.getElementById("mensaje-registro").innerHTML = 
+    // Mostramos el mensaje (¡ojo aquí también el guion bajo!)
+    document.getElementById("mensaje_registro").innerHTML = 
         `¡Bienvenido/a, <strong>${nombre}</strong>! Registro exitoso.`;
     
-    // Limpiamos el formulario
     this.reset();
 });

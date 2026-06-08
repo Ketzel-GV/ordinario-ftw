@@ -316,3 +316,72 @@ header input {
     border: 1px solid #B08968;
     border-radius: 5px;
 }
+
+#btn_cerrar {
+    display: none; /* Se mantendrá oculto por defecto hasta que el JS lo active */
+    width: 100%;
+    padding: 10px;
+    background-color: #B08968; /* El café claro de tu paleta */
+    color: #F7F3EE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+#btn_cerrar:hover {
+    background-color: #7F5539; /* Un tono un poco más oscuro al pasar el ratón */
+}
+.nosotros_container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    line-height: 1.8;
+    color: #2B2118;
+    border: 1px solid #E0D4C8;
+    text-align: center;
+}
+
+.nosotros_container h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #B08968;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.mision_vision {
+    margin: 30px 0;
+    text-align: left;
+}
+
+.mision_vision h3 {
+    color: #7F5539;
+    margin-top: 15px;
+}
+
+/* Para pantallas de hasta 600px de ancho (celulares) */
+@media (max-width: 600px) {
+    .destacados_grid {
+        grid-template-columns: 1fr; /* Una sola columna para que el libro se vea grande */
+    }
+
+    nav ul li {
+        display: block; /* Pone el menú en vertical */
+        margin: 10px 0;
+    }
+
+    header input {
+        width: 90%; /* El buscador ocupa casi todo el ancho */
+    }
+}
+
+/* Para pantallas entre 601px y 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    .destacados_grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+    }
+}
