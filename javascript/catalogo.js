@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let listaLibros = [];
 
     
-    fetch("../xml/catalogo_libros.xml")
+    fetch("/ordinario-ftw/xml/catalogo_libros.xml")
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();

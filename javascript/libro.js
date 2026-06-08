@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contenedorDetalle = document.getElementById("detalle_libro");
     const tituloBuscado = localStorage.getItem("libroSeleccionado");
 
-    fetch("../xml/catalogo_libros.xml")
+    fetch("/ordinario-ftw/xml/catalogo_libros.xml")
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
