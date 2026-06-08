@@ -6,7 +6,6 @@ document.getElementById("formulario_registro").addEventListener("submit", functi
     // Guardamos el usuario
     localStorage.setItem("usuarioRegistrado", nombre);
     
-    // Mostramos el mensaje (¡ojo aquí también el guion bajo!)
     document.getElementById("mensaje_registro").innerHTML = 
         `¡Bienvenido/a, <strong>${nombre}</strong>! Registro exitoso.`;
     
