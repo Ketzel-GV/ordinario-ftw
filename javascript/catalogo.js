@@ -23,19 +23,23 @@ document.addEventListener("DOMContentLoaded", () => {
             pintarTabla(listaLibros);
         });
 
-        
     function pintarTabla(datos) {
-        tabla.innerHTML = "";
-        datos.forEach(l => {
-            tabla.innerHTML += `<tr>
-                <td>${l.titulo}</td>
-                <td>${l.autor}</td>
-                <td>${l.categoria}</td>
-                <td>${l.anio}</td>
-            </tr>`;
+    tabla.innerHTML = "";
+    datos.forEach(l => {
+        const fila = document.createElement("tr");
+        fila.innerHTML = `
+            <td>${l.titulo}</td>
+            <td>${l.autor}</td>
+            <td>${l.categoria}</td>
+            <td>${l.anio}</td>
+        `;
+        fila.addEventListener("click", () => {
+            localStorage.setItem("libroSeleccionado", l.titulo);
+            window.location.href = "/html/libro.html"; 
         });
-    }
-
+        tabla.appendChild(fila);
+    });
+}
     
     inputFiltro.addEventListener("keyup", () => {
         const busqueda = inputFiltro.value.toLowerCase();

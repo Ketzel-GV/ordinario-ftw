@@ -41,8 +41,8 @@ nav ul li a:hover {
 /* Header */
 header {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('https://i.pinimg.com/1200x/69/d0/d8/69d0d8ee0290aa330c1ff12aa7a0801b.jpg');
-    background-size: cover; /* Ajusta la imagen para que cubra todo el espacio */
-    background-position: center; /* Centra la imagen */
+    background-size: cover; 
+    background-position: center; 
 
     background-repeat: no-repeat;
     text-align: center;
@@ -73,13 +73,51 @@ header input {
 }
 
 /* Destacados */
-#destacados {
+.destacados_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
     padding: 20px;
     max-width: 900px;
     margin: 0 auto;
-    background: #ffffff; 
+}
+
+.tarjeta_libro {
+    background: #ffffff;
+    padding: 15px;
     border-radius: 10px;
-    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #E0D4C8;
+    transition: transform 0.3s;
+}
+
+.tarjeta_libro:hover {
+    transform: translateY(-10px); 
+}
+
+.tarjeta_libro img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.btn_ver_mas {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #7F5539; /* Café medio */
+    color: #F7F3EE; /* Crema */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+    text-decoration: none; /* Si usas un enlace <a> en vez de <button> */
+}
+
+.btn_ver_mas:hover {
+    background-color: #2B2118; /* Café oscuro al pasar el ratón */
 }
 
 /* Estilo general de la tabla */
@@ -121,3 +159,97 @@ header input {
     border-radius: 8px;
     font-size: 1rem;
 }
+
+/* Contenedor central para el detalle del libro */
+#detalle_libro {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid #B08968;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+#detalle_libro h2 {
+    color: #2B2118;
+    border-bottom: 2px solid #E0D4C8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#detalle_libro p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #4e3b31;
+}
+
+/* Botón para volver al catálogo */
+.boton_volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #B08968;
+    color: #F7F3EE;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton_volver:hover {
+    background-color: #2B2118;
+}
+
+.contenedor_detalle {
+    display: flex; /* Activa el diseño en columnas */
+    gap: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #E0D4C8;
+}
+
+.portada_contenedor img {
+    width: 200px; /* Tamaño fijo para la portada */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn_accion {
+    background-color: #7F5539;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_accion:hover {
+    background-color: #2B2118;
+}
+
+/* Contenedor principal de detalles */
+.detalle_container {
+    display: flex;
+    gap: 40px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 50px auto;
+    border: 1px solid #E0D4C8;
+}
+
+.img_detalle {
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.info_detalle h2 { margin-top: 0; color: #2B2118; }
+.info_detalle p { font-size: 1.1rem; color: #5c4b42; margin: 10px 0; }

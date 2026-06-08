@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Detalles del libro</title>
+    <link rel="stylesheet" href="/css/estilo_inicio.css">
+</head>
+<body>
+
+    <header>
+        <h1>Detalles del libro</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="autor.html">Autores</a></li>
+            <li><a href="informacion.html">Nosotros</a></li>
+            <li><a href="login.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <div id="detalle_libro" class="contenedor_detalle">
+        <div class="portada_contenedor">
+            <img id="img_portada" src="" alt="Portada del libro">
+        </div>
+        <div class= "contenedor_informacion">
+            <h2 id="titulo_libro"></h2>
+            <p id="autor_libro"></p>
+            <p id="precio_libro"></p>
+            <div class="acciones">
+                <button class="btn_accion">Leer muestra</button>
+                <button class="btn_accion">Descargar PDF</button>
+                <button id="btn_favorito" class="btn_accion">❤️</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <a href="catalogo.html" class="boton_volver">Volver al catálogo</a>
+    </div>
+    </main>
+
+    <script src="/javascript/libro.js"></script>
+
+    <footer>
+        <p>© Proyecto Final FTW - Ketzel GV</p>
+    </footer>
+
+</body>
+</html>
