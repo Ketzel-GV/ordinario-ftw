@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es"> <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Lista de favoritos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Favoritos</title>
     <link rel="stylesheet" href="/css/estilo_inicio.css">
 </head>
 <body>
@@ -10,20 +10,25 @@
         <h1>Mis libros favoritos</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="autor.html">Autores</a></li>
+            <li><a href="informacion.html">Nosotros</a></li>
+            <li><a href="login.html">Registro</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <ul id="lista_favoritos"></ul>
+        <div id="lista_favoritos" class="favoritos_container"></div>
     </main>
 
-    <div style="text-align: center;">
+    <div style="text-align: center; margin-top: 20px;">
         <a href="catalogo.html" class="boton_volver">Volver al catálogo</a>
     </div>
-    </main>
 
     <script src="/javascript/favoritos.js"></script>
-
-    <footer>
-        <p>© Proyecto Final FTW - Ketzel GV</p>
-    </footer>
-
 </body>
 </html>

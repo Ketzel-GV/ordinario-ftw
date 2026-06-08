@@ -253,3 +253,21 @@ header input {
 
 .info_detalle h2 { margin-top: 0; color: #2B2118; }
 .info_detalle p { font-size: 1.1rem; color: #5c4b42; margin: 10px 0; }
+
+#lista_favoritos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    list-style: none; /* Quita los puntitos de la lista */
+}
+.tarjeta_favorito {
+    background: #ffffff;
+    border: 1px solid #E0D4C8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
